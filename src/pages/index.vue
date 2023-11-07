@@ -1,43 +1,66 @@
 <template>
-  <view class="content">
-    <image class="logo" src="@/static/logo.png"></image>
-    <view class="text-area">
-      <text class="title">Hello RuoYi</text>
+  <view class="mine-container" :style="{height: `${windowHeight}px`}">
+    <!--顶部个人信息栏-->
+    <view class="header-section">
+      <view class="uni-title uni-common-pl">地区选择器</view>
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">
+            当前选择
+          </view>
+          <view class="uni-list-cell-db">
+            <picker @change="bindPickerChange" :value="index" :range="array">
+              <view class="uni-input">{{array[index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="content-section">
+      {{ "题目" }}
+
     </view>
   </view>
 </template>
 
 <script>
+  import storage from '@/utils/storage'
+  
   export default {
-    onLoad: function() {
+    data() {
+      return {
+        
+      }
+    },
+    computed: {
+      
+    },
+    methods: {
+      
     }
   }
 </script>
 
-<style>
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+<style lang="scss">
+  page {
+    background-color: #f5f6f7;
   }
 
-  .logo {
-    height: 200rpx;
-    width: 200rpx;
-    margin-top: 200rpx;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50rpx;
-  }
+  .mine-container {
+    width: 100%;
+    height: 100%;
 
-  .text-area {
-    display: flex;
-    justify-content: center;
-  }
 
-  .title {
-    font-size: 36rpx;
-    color: #8f8f94;
+    .header-section {
+      padding: 15px 15px 45px 15px;
+      background-color: #3c96f3;
+      color: white;
+    }
+
+    .content-section {
+      position: relative;
+      top: -50px;
+    }
   }
 </style>

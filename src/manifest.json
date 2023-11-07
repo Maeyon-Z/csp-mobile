@@ -1,5 +1,5 @@
 {
-    "name" : "若依移动端",
+    "name" : "CSP小程序端",
     "appid" : "__UNI__25A9D80",
     "description" : "",
     "versionName" : "1.1.0",
@@ -41,7 +41,7 @@
     },
     "quickapp" : {},
     "mp-weixin" : {
-        "appid" : "wxccd7e2a0911b3397",
+        "appid" : "wx3e4d07fbcce8d227",
         "setting" : {
             "urlCheck" : false,
             "es6" : false,

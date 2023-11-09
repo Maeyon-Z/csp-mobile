@@ -1974,6 +1974,11 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@vant/weapp@^1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@vant/weapp/-/weapp-1.11.1.tgz#26d3196751bb3602b2801554bac346d42d2e88b7"
+  integrity sha512-2QddSq3MsozbTBAgEmW1rhzsEJNWPF2VS427M5pOOn0a7/f6lW+tymwdTcOQCzQONavhFwBv6Lebbs/UjE3Yig==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.4.0":
   version "1.4.0"
   resolved "https://registry.npmmirror.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.4.0.tgz#8d53a1e21347db8edbe54d339902583176de09f2"
@@ -3935,9 +3940,9 @@ cross-env@^5.2.0:
   dependencies:
     cross-spawn "^6.0.5"
 
-cross-env@^7.0.2:
+cross-env@^7.0.3:
   version "7.0.3"
-  resolved "https://registry.npmmirror.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
   integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
   dependencies:
     cross-spawn "^7.0.1"

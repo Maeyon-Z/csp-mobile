@@ -10,7 +10,7 @@
       </van-cell>
     </van-cell-group>
     <view style="height:10px"/>
-    <van-tabs v-show="showExercise" style="margin-top:20px" :key="showExercise">
+    <van-tabs v-if="showExercise" style="margin-top:20px" :key="exerciseList" :active="active">
       <van-tab v-for="(item, id) in exerciseList" :key="id" :title="id+1">
         <van-row :span="24" style="margin-top:20px; margin-bottom:20px; font-size:20px">
           {{ "第" + (id+1) + "题"}}
@@ -93,12 +93,14 @@
         typeColumns: ['随机', '基础题', '阅读程序题', '补全程序题'],
         countColumns: [],
         exerciseList:[],
-        showAnswerList:[]
+        showAnswerList:[],
+        active: 0,
       }
     },
     methods: {
       async startPractice() {
         this.showExercise = false;
+        this.active = 0;
         let i = 0;
         if (this.type === '随机') i = -1;
         if (this.type === '基础题') i = 0;

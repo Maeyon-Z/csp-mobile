@@ -1,7 +1,8 @@
 // 应用全局配置
 module.exports = {
   //后端接口
-  baseUrl: 'http://localhost:7070',
+  baseUrl: 'http://47.98.152.146:8888/prod-api',
+  // baseUrl: 'http://localhost:7070',
   // 应用信息
   appInfo: {
     // 应用名称
